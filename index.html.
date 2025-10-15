@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Name — Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height:1.6; padding:0 16px; }
+    header { text-align:center; margin-bottom:30px; }
+    h1 { margin:0; }
+    .projects { display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+    .card { border:1px solid #ddd; padding:12px; border-radius:8px; background:#fff; }
+    footer { text-align:center; margin-top:30px; color:#555; }
+    a { color:inherit; text-decoration:none; font-weight:600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Short one-line bio — what you do (e.g. web developer, designer).</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Short description. <a href="https://github.com/YOURUSERNAME/project-one" target="_blank">Code</a></p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Short description. <a href="#">Live</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About / Skills</h2>
+    <p>Mere pass: HTML, CSS, JS, Python. Short paragraph about you.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: <a href="https://github.com/YOURUSERNAME" target="_blank">github.com/YOURUSERNAME</a></p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Your Name
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
